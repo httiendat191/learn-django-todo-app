@@ -1,8 +1,8 @@
-# Bỏ qua thư mục môi trường ảo (Nặng hàng trăm MB, không ai up cái này)
+# Bỏ qua thư mục môi trường ảo
 venv/
 .env
 
-# Bỏ qua file database (Để tránh lộ dữ liệu cá nhân)
+# Bỏ qua file database
 db.sqlite3
 
 # Bỏ qua file rác của Python biên dịch
