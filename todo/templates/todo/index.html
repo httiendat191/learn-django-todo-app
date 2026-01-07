@@ -1,0 +1,19 @@
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="title" placeholder="Việc cần làm..." />
+  <button type="submit">Thêm</button>
+</form>
+
+<ul>
+  {% for task in tasks %}
+  <li>
+    {{ task.title }} {% if task.completed %}
+    <span style="color: green">(Đã xong)</span>
+    {% else %}
+    <span style="color: red">(Chưa xong)</span>
+    {% endif %}
+  </li>
+  {% empty %}
+  <li>Không có việc gì làm.</li>
+  {% endfor %}
+</ul>

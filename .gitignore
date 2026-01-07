@@ -1,0 +1,13 @@
+# Bỏ qua thư mục môi trường ảo (Nặng hàng trăm MB, không ai up cái này)
+venv/
+.env
+
+# Bỏ qua file database (Để tránh lộ dữ liệu cá nhân)
+db.sqlite3
+
+# Bỏ qua file rác của Python biên dịch
+__pycache__/
+*.pyc
+
+# File hệ thống
+.DS_Store
